@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-018",
+  "season": "spring",
+  "occasion": "formal",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "tan"
+    },
+    {
+      "category": "trousers",
+      "color": "cream"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 88,
+  "rationale": "Spring formal ensemble pairing tan with cream for an offline recommendation example."
+}
