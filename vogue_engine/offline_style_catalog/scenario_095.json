@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-095",
+  "season": "winter",
+  "occasion": "sport",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "white"
+    },
+    {
+      "category": "trousers",
+      "color": "black"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 87,
+  "rationale": "Winter sport ensemble pairing white with black for an offline recommendation example."
+}
