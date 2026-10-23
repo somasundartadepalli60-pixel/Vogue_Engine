@@ -20,6 +20,15 @@ dependencies = [
     "uvicorn>=0.27.0",
 ]
 
+[project.scripts]
+vogue-engine = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+include = ["vogue_engine*"]
+
 [project.optional-dependencies]
 test = [
     "pytest>=7.4.0",

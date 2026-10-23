@@ -305,3 +305,30 @@ print(f"Recommended Palette: {[s.hex_code for s in report.color.primary_swatches
 
 ## 7. License
 MIT License. Open-source for enterprise personal style and morphometric intelligence.
+
+## Verified entry points and build commands
+
+This repository contains a Python FastAPI application. Run it locally after installing Python 3.10+:
+
+```bash
+python -m pip install -r requirements.lock
+python main.py --host 127.0.0.1 --port 8000
+```
+
+Visit `http://127.0.0.1:8000/docs` for the API UI or `http://127.0.0.1:8000/health` for the health endpoint. To compile source files without starting the server:
+
+```bash
+python -m compileall -q main.py vogue_engine
+```
+
+Optional npm command aliases (npm has no runtime dependencies):
+
+```bash
+npm ci
+npm run build
+npm start
+```
+
+A `package-lock.json` records the dependency-free npm launcher. **It does not lock Python dependencies.** `requirements.lock` pins Python direct dependencies, but transitive dependencies are not fully locked. For reproducible Python installs, resolve a complete lock using `uv lock` with package index access and commit `uv.lock`.
+
+Docker option: `docker build -t vogue-engine .` then `docker run --rm -p 8000:8000 vogue-engine`.

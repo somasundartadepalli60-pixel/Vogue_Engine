@@ -1,0 +1,11 @@
+{
+  "name": "vogue-engine-local-launcher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-free npm command wrappers for the Python Vogue Engine application",
+  "scripts": {
+    "start": "python main.py",
+    "build": "python -m compileall -q main.py vogue_engine",
+    "test": "python -m pytest tests"
+  }
+}
