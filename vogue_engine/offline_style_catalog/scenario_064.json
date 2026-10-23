@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-064",
+  "season": "autumn",
+  "occasion": "travel",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "charcoal"
+    },
+    {
+      "category": "trousers",
+      "color": "tan"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 82,
+  "rationale": "Autumn travel ensemble pairing charcoal with tan for an offline recommendation example."
+}
