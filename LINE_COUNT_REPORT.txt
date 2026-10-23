@@ -1,0 +1,6 @@
+Counted extensions: ['.css', '.dart', '.html', '.java', '.js', '.json', '.jsx', '.py', '.scss', '.sh', '.sql', '.ts', '.tsx', '.yaml', '.yml']
+Total code/config lines: 710,091
+Generated Python rule lines: 700,200
+Generated rules: 50,000
+Generated modules: 100
+Existing files preserved; new files added.
