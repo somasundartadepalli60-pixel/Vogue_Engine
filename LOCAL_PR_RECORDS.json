@@ -1,0 +1,1005 @@
+{
+  "disclaimer": "These are simulated local PR workflows, NOT actual GitHub/GitLab pull requests. No remote reviews or hosted PR numbers exist.",
+  "records": [
+    {
+      "local_pr_number": 1,
+      "title": "Add spring casual outfit scenario 001",
+      "source_branch": "feature/offline-outfit-scenario-001",
+      "target_branch": "main",
+      "commit": "9a9c4c6877fe01d5a5871e7fafeeea4f9f123228",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_001.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 2,
+      "title": "Add spring work outfit scenario 002",
+      "source_branch": "feature/offline-outfit-scenario-002",
+      "target_branch": "main",
+      "commit": "2b639e08b2868534d1b2abe9af22a8bc73718f81",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_002.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 3,
+      "title": "Add spring formal outfit scenario 003",
+      "source_branch": "feature/offline-outfit-scenario-003",
+      "target_branch": "main",
+      "commit": "70d7fea57bb5fe96db74c5cafc4666e2c3f11a47",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_003.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 4,
+      "title": "Add spring travel outfit scenario 004",
+      "source_branch": "feature/offline-outfit-scenario-004",
+      "target_branch": "main",
+      "commit": "e247fe5beea1fc7ee14908307914ff25e41270d9",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_004.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 5,
+      "title": "Add spring sport outfit scenario 005",
+      "source_branch": "feature/offline-outfit-scenario-005",
+      "target_branch": "main",
+      "commit": "ec81ee53847ceded363fdbc087ce6ccd6fe30cb0",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_005.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 6,
+      "title": "Add spring casual outfit scenario 006",
+      "source_branch": "feature/offline-outfit-scenario-006",
+      "target_branch": "main",
+      "commit": "af60feb2e9296fa21c0096cc748cf118bbf30d71",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_006.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 7,
+      "title": "Add spring work outfit scenario 007",
+      "source_branch": "feature/offline-outfit-scenario-007",
+      "target_branch": "main",
+      "commit": "96894abb7b26b33e979db9b5cca760fd02259f70",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_007.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 8,
+      "title": "Add spring formal outfit scenario 008",
+      "source_branch": "feature/offline-outfit-scenario-008",
+      "target_branch": "main",
+      "commit": "24182c7d6d6c74c626cce647fa71c77ce8a37434",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_008.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 9,
+      "title": "Add spring travel outfit scenario 009",
+      "source_branch": "feature/offline-outfit-scenario-009",
+      "target_branch": "main",
+      "commit": "c6e9f5d94b3df0bbf00e64bb6f68c4e3763e709a",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_009.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 10,
+      "title": "Add spring sport outfit scenario 010",
+      "source_branch": "feature/offline-outfit-scenario-010",
+      "target_branch": "main",
+      "commit": "018a939056778e1d2a1568f419434cbbdad4d586",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_010.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 11,
+      "title": "Add spring casual outfit scenario 011",
+      "source_branch": "feature/offline-outfit-scenario-011",
+      "target_branch": "main",
+      "commit": "e37c010e8e717db5bd46b2a75700413d44bdd7b6",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_011.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 12,
+      "title": "Add spring work outfit scenario 012",
+      "source_branch": "feature/offline-outfit-scenario-012",
+      "target_branch": "main",
+      "commit": "01c4382998bebcd70043d408befd0498874b70f5",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_012.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 13,
+      "title": "Add spring formal outfit scenario 013",
+      "source_branch": "feature/offline-outfit-scenario-013",
+      "target_branch": "main",
+      "commit": "865c943e84fc406c39439517e8049b1474c2bac7",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_013.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 14,
+      "title": "Add spring travel outfit scenario 014",
+      "source_branch": "feature/offline-outfit-scenario-014",
+      "target_branch": "main",
+      "commit": "0ff0c267ab6dd425531e67639239c4656219f174",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_014.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 15,
+      "title": "Add spring sport outfit scenario 015",
+      "source_branch": "feature/offline-outfit-scenario-015",
+      "target_branch": "main",
+      "commit": "462897acf4fc23f49a24cb5991272d046c38bad4",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_015.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 16,
+      "title": "Add spring casual outfit scenario 016",
+      "source_branch": "feature/offline-outfit-scenario-016",
+      "target_branch": "main",
+      "commit": "bde2b3c3b7339670f778309842900bab546315cf",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_016.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 17,
+      "title": "Add spring work outfit scenario 017",
+      "source_branch": "feature/offline-outfit-scenario-017",
+      "target_branch": "main",
+      "commit": "45f39398461248a1f13a4b26d0f9a2783a88aea7",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_017.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 18,
+      "title": "Add spring formal outfit scenario 018",
+      "source_branch": "feature/offline-outfit-scenario-018",
+      "target_branch": "main",
+      "commit": "cf09266b09a91c3500f519e488c2414978bcd727",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_018.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 19,
+      "title": "Add spring travel outfit scenario 019",
+      "source_branch": "feature/offline-outfit-scenario-019",
+      "target_branch": "main",
+      "commit": "7e8e99a8e868a35628f8e3fd5099d13ea70c3f42",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_019.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 20,
+      "title": "Add spring sport outfit scenario 020",
+      "source_branch": "feature/offline-outfit-scenario-020",
+      "target_branch": "main",
+      "commit": "020d21f5d53e92a275f66bd54b866089395282af",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_020.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 21,
+      "title": "Add spring casual outfit scenario 021",
+      "source_branch": "feature/offline-outfit-scenario-021",
+      "target_branch": "main",
+      "commit": "9e7e8cf975978032265b455bd2061814d26a4d40",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_021.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 22,
+      "title": "Add spring work outfit scenario 022",
+      "source_branch": "feature/offline-outfit-scenario-022",
+      "target_branch": "main",
+      "commit": "66d351d70ba7273c5c655a15c60f477fe1a57cf6",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_022.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 23,
+      "title": "Add spring formal outfit scenario 023",
+      "source_branch": "feature/offline-outfit-scenario-023",
+      "target_branch": "main",
+      "commit": "cc7142d419e1da8ee62f6ee0bb052f3170f8b081",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_023.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 24,
+      "title": "Add spring travel outfit scenario 024",
+      "source_branch": "feature/offline-outfit-scenario-024",
+      "target_branch": "main",
+      "commit": "7bd90e32cc3eb8e75090d9e6c6dc61ec4eca6fee",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_024.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 25,
+      "title": "Add spring sport outfit scenario 025",
+      "source_branch": "feature/offline-outfit-scenario-025",
+      "target_branch": "main",
+      "commit": "7b4879033ce96bd2f28ad873908702db31eecae0",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_025.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 26,
+      "title": "Add summer casual outfit scenario 026",
+      "source_branch": "feature/offline-outfit-scenario-026",
+      "target_branch": "main",
+      "commit": "8d3ed94b5cba61c3f97bf9b105e96463a614b5cf",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_026.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 27,
+      "title": "Add summer work outfit scenario 027",
+      "source_branch": "feature/offline-outfit-scenario-027",
+      "target_branch": "main",
+      "commit": "ea1b5442ff5c256031cfdc57fc1ea10fd19da4d6",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_027.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 28,
+      "title": "Add summer formal outfit scenario 028",
+      "source_branch": "feature/offline-outfit-scenario-028",
+      "target_branch": "main",
+      "commit": "ae6c385ccca088e723085c2a9e041bc25b778714",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_028.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 29,
+      "title": "Add summer travel outfit scenario 029",
+      "source_branch": "feature/offline-outfit-scenario-029",
+      "target_branch": "main",
+      "commit": "15937e8479ec331f5ea8b11634c3d298f5146fd6",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_029.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 30,
+      "title": "Add summer sport outfit scenario 030",
+      "source_branch": "feature/offline-outfit-scenario-030",
+      "target_branch": "main",
+      "commit": "83afab84381d6dfb7f57e0e4b5128cb427be2009",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_030.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 31,
+      "title": "Add summer casual outfit scenario 031",
+      "source_branch": "feature/offline-outfit-scenario-031",
+      "target_branch": "main",
+      "commit": "30e14c17da1cf4cc0cf0e14eea1a907d13a948f1",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_031.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 32,
+      "title": "Add summer work outfit scenario 032",
+      "source_branch": "feature/offline-outfit-scenario-032",
+      "target_branch": "main",
+      "commit": "a06ab6d0574e61b6ec73e6feb6aa89a0d5780c20",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_032.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 33,
+      "title": "Add summer formal outfit scenario 033",
+      "source_branch": "feature/offline-outfit-scenario-033",
+      "target_branch": "main",
+      "commit": "80863e874d45af1d57c69036be64f0342498658a",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_033.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 34,
+      "title": "Add summer travel outfit scenario 034",
+      "source_branch": "feature/offline-outfit-scenario-034",
+      "target_branch": "main",
+      "commit": "0c0b1a6b112394516fcdc799bf753722da0f53c6",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_034.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 35,
+      "title": "Add summer sport outfit scenario 035",
+      "source_branch": "feature/offline-outfit-scenario-035",
+      "target_branch": "main",
+      "commit": "d9371ba97911c015dbbd92e5babb5ddff19e49a2",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_035.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 36,
+      "title": "Add summer casual outfit scenario 036",
+      "source_branch": "feature/offline-outfit-scenario-036",
+      "target_branch": "main",
+      "commit": "6153a872b2c69f9e9460e11cbbd96579fa8cec1f",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_036.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 37,
+      "title": "Add summer work outfit scenario 037",
+      "source_branch": "feature/offline-outfit-scenario-037",
+      "target_branch": "main",
+      "commit": "9c9e41782a5306b5c6fc96c8b5106dbc0cee66e5",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_037.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 38,
+      "title": "Add summer formal outfit scenario 038",
+      "source_branch": "feature/offline-outfit-scenario-038",
+      "target_branch": "main",
+      "commit": "15f5b2e4e62a1e0e0c1b38137f6529135bf662bc",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_038.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 39,
+      "title": "Add summer travel outfit scenario 039",
+      "source_branch": "feature/offline-outfit-scenario-039",
+      "target_branch": "main",
+      "commit": "48621fc3fb1a279e2107f6bc578d4e38947f4d54",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_039.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 40,
+      "title": "Add summer sport outfit scenario 040",
+      "source_branch": "feature/offline-outfit-scenario-040",
+      "target_branch": "main",
+      "commit": "ccd591a575f05118a112fe76239df75ab3b97ef7",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_040.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 41,
+      "title": "Add summer casual outfit scenario 041",
+      "source_branch": "feature/offline-outfit-scenario-041",
+      "target_branch": "main",
+      "commit": "187f03f3fda44a562e820d6dcc05d19b52c3a920",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_041.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 42,
+      "title": "Add summer work outfit scenario 042",
+      "source_branch": "feature/offline-outfit-scenario-042",
+      "target_branch": "main",
+      "commit": "c8aa5cfd45ad6e4f82ebf9c03fd41c4790c25b78",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_042.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 43,
+      "title": "Add summer formal outfit scenario 043",
+      "source_branch": "feature/offline-outfit-scenario-043",
+      "target_branch": "main",
+      "commit": "f813f6409ffd55a8cc2d7ac8111e348d41f25529",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_043.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 44,
+      "title": "Add summer travel outfit scenario 044",
+      "source_branch": "feature/offline-outfit-scenario-044",
+      "target_branch": "main",
+      "commit": "68aef12f4232ed412a4f21eb1194cd28d69d7078",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_044.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 45,
+      "title": "Add summer sport outfit scenario 045",
+      "source_branch": "feature/offline-outfit-scenario-045",
+      "target_branch": "main",
+      "commit": "60d5f82f2da01fdfd871c9e32e846fe08854dc5a",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_045.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 46,
+      "title": "Add summer casual outfit scenario 046",
+      "source_branch": "feature/offline-outfit-scenario-046",
+      "target_branch": "main",
+      "commit": "78a25c9a41e09f5b32a3707518fcc4fa220efafb",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_046.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 47,
+      "title": "Add summer work outfit scenario 047",
+      "source_branch": "feature/offline-outfit-scenario-047",
+      "target_branch": "main",
+      "commit": "9e022fba49b53c6c907b9e4f0a149e57e31d2e3b",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_047.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 48,
+      "title": "Add summer formal outfit scenario 048",
+      "source_branch": "feature/offline-outfit-scenario-048",
+      "target_branch": "main",
+      "commit": "36fa0c769f5c7457a93a1e407d452df83f4bdbb8",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_048.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 49,
+      "title": "Add summer travel outfit scenario 049",
+      "source_branch": "feature/offline-outfit-scenario-049",
+      "target_branch": "main",
+      "commit": "992ad0ab74f995949c00b0715450eda6740f41e2",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_049.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 50,
+      "title": "Add summer sport outfit scenario 050",
+      "source_branch": "feature/offline-outfit-scenario-050",
+      "target_branch": "main",
+      "commit": "4064f0e5ac6a041af6c2467904acb4e14ed864e4",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_050.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 51,
+      "title": "Add autumn casual outfit scenario 051",
+      "source_branch": "feature/offline-outfit-scenario-051",
+      "target_branch": "main",
+      "commit": "208aa74c3983b810310e7823e13a338ee7febe2f",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_051.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 52,
+      "title": "Add autumn work outfit scenario 052",
+      "source_branch": "feature/offline-outfit-scenario-052",
+      "target_branch": "main",
+      "commit": "b3992cdb7f691c78346a8a0d5c6bf89c63ae9d69",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_052.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 53,
+      "title": "Add autumn formal outfit scenario 053",
+      "source_branch": "feature/offline-outfit-scenario-053",
+      "target_branch": "main",
+      "commit": "ac7de213417dfafbf75a0bad4649de00d7eabe2e",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_053.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 54,
+      "title": "Add autumn travel outfit scenario 054",
+      "source_branch": "feature/offline-outfit-scenario-054",
+      "target_branch": "main",
+      "commit": "c9e98bedb6830580c1db0418707086a8befdd652",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_054.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 55,
+      "title": "Add autumn sport outfit scenario 055",
+      "source_branch": "feature/offline-outfit-scenario-055",
+      "target_branch": "main",
+      "commit": "83df58fbfbff8142c6fdbdc1725e971f3d8432a9",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_055.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 56,
+      "title": "Add autumn casual outfit scenario 056",
+      "source_branch": "feature/offline-outfit-scenario-056",
+      "target_branch": "main",
+      "commit": "bae2781c81ef404fd005824610aa20e35a8956a3",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_056.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 57,
+      "title": "Add autumn work outfit scenario 057",
+      "source_branch": "feature/offline-outfit-scenario-057",
+      "target_branch": "main",
+      "commit": "3aaf83d6199549d16fe5c8ffd6e8db60dfe16ebe",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_057.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 58,
+      "title": "Add autumn formal outfit scenario 058",
+      "source_branch": "feature/offline-outfit-scenario-058",
+      "target_branch": "main",
+      "commit": "d8d9a2e6c4023f52d9a20e53d57cc4ac4262bc50",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_058.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 59,
+      "title": "Add autumn travel outfit scenario 059",
+      "source_branch": "feature/offline-outfit-scenario-059",
+      "target_branch": "main",
+      "commit": "a3d868d90da3d31c4f5f919e08a91f38a1e39b77",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_059.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 60,
+      "title": "Add autumn sport outfit scenario 060",
+      "source_branch": "feature/offline-outfit-scenario-060",
+      "target_branch": "main",
+      "commit": "56ba8822995b76bb66450696c839518d8ebb9778",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_060.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 61,
+      "title": "Add autumn casual outfit scenario 061",
+      "source_branch": "feature/offline-outfit-scenario-061",
+      "target_branch": "main",
+      "commit": "4ccb1810365877c69fb4d624a710dba92367d437",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_061.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 62,
+      "title": "Add autumn work outfit scenario 062",
+      "source_branch": "feature/offline-outfit-scenario-062",
+      "target_branch": "main",
+      "commit": "e659f0c59392ce03902bc50336fd1d6fd4e896d3",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_062.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 63,
+      "title": "Add autumn formal outfit scenario 063",
+      "source_branch": "feature/offline-outfit-scenario-063",
+      "target_branch": "main",
+      "commit": "5e6c764f9e9763d470abbe3b731f4bba8a46c8d5",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_063.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 64,
+      "title": "Add autumn travel outfit scenario 064",
+      "source_branch": "feature/offline-outfit-scenario-064",
+      "target_branch": "main",
+      "commit": "a068b29d9a60243cc9a745e389ace7c9c506f292",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_064.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 65,
+      "title": "Add autumn sport outfit scenario 065",
+      "source_branch": "feature/offline-outfit-scenario-065",
+      "target_branch": "main",
+      "commit": "6f8ec22789b4658b3f93ecd177cf77be9c0247fa",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_065.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 66,
+      "title": "Add autumn casual outfit scenario 066",
+      "source_branch": "feature/offline-outfit-scenario-066",
+      "target_branch": "main",
+      "commit": "90a637b894be7429dd1068201941965dbdacf842",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_066.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 67,
+      "title": "Add autumn work outfit scenario 067",
+      "source_branch": "feature/offline-outfit-scenario-067",
+      "target_branch": "main",
+      "commit": "faff54db4eafec8d605b264defa847cd1ce0fb33",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_067.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 68,
+      "title": "Add autumn formal outfit scenario 068",
+      "source_branch": "feature/offline-outfit-scenario-068",
+      "target_branch": "main",
+      "commit": "d7346e7f65bf1b0346b77d93278b22a347413ada",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_068.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 69,
+      "title": "Add autumn travel outfit scenario 069",
+      "source_branch": "feature/offline-outfit-scenario-069",
+      "target_branch": "main",
+      "commit": "dbf16be9bde8d6545769c05d29e5000a8b9ef49a",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_069.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 70,
+      "title": "Add autumn sport outfit scenario 070",
+      "source_branch": "feature/offline-outfit-scenario-070",
+      "target_branch": "main",
+      "commit": "ec2b1beeeb25724f521342aa21627001d8b27c4d",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_070.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 71,
+      "title": "Add autumn casual outfit scenario 071",
+      "source_branch": "feature/offline-outfit-scenario-071",
+      "target_branch": "main",
+      "commit": "efbd4de71403419e5f2130ac03e03901cbbadfe1",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_071.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 72,
+      "title": "Add autumn work outfit scenario 072",
+      "source_branch": "feature/offline-outfit-scenario-072",
+      "target_branch": "main",
+      "commit": "5b6faf045f39cae4334bd25a165bf953a29cc50e",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_072.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 73,
+      "title": "Add autumn formal outfit scenario 073",
+      "source_branch": "feature/offline-outfit-scenario-073",
+      "target_branch": "main",
+      "commit": "fa26a6effea8d25bd6c5554b567ce7245c03e6f1",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_073.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 74,
+      "title": "Add autumn travel outfit scenario 074",
+      "source_branch": "feature/offline-outfit-scenario-074",
+      "target_branch": "main",
+      "commit": "73544e0657d9e621a51b39c916dae8c385a30d88",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_074.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 75,
+      "title": "Add autumn sport outfit scenario 075",
+      "source_branch": "feature/offline-outfit-scenario-075",
+      "target_branch": "main",
+      "commit": "0fb85358c207c8b9f08f375573223bb6283df43a",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_075.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 76,
+      "title": "Add winter casual outfit scenario 076",
+      "source_branch": "feature/offline-outfit-scenario-076",
+      "target_branch": "main",
+      "commit": "2fdd76d21821307362a5bb61bf3b1502ddf3178d",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_076.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 77,
+      "title": "Add winter work outfit scenario 077",
+      "source_branch": "feature/offline-outfit-scenario-077",
+      "target_branch": "main",
+      "commit": "c8a534a1538c6445d35a84e5c600d39a168d6683",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_077.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 78,
+      "title": "Add winter formal outfit scenario 078",
+      "source_branch": "feature/offline-outfit-scenario-078",
+      "target_branch": "main",
+      "commit": "f55dabff42af26c2f834df2b993f591d89c38328",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_078.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 79,
+      "title": "Add winter travel outfit scenario 079",
+      "source_branch": "feature/offline-outfit-scenario-079",
+      "target_branch": "main",
+      "commit": "9883a6a29449463f0154e9fd7cd797201d5de591",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_079.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 80,
+      "title": "Add winter sport outfit scenario 080",
+      "source_branch": "feature/offline-outfit-scenario-080",
+      "target_branch": "main",
+      "commit": "d5e90f03105c1a4166dc26c0749aa32f95194a11",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_080.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 81,
+      "title": "Add winter casual outfit scenario 081",
+      "source_branch": "feature/offline-outfit-scenario-081",
+      "target_branch": "main",
+      "commit": "fe5a1c3c90fbb276b691e6baeb4c0c58a5ebdac7",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_081.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 82,
+      "title": "Add winter work outfit scenario 082",
+      "source_branch": "feature/offline-outfit-scenario-082",
+      "target_branch": "main",
+      "commit": "938cd2bc26d13f9ef57d9e66b75f4c5e2257f0b0",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_082.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 83,
+      "title": "Add winter formal outfit scenario 083",
+      "source_branch": "feature/offline-outfit-scenario-083",
+      "target_branch": "main",
+      "commit": "ad30f49d6c2e9d976356ee11494c9530dbd46eec",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_083.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 84,
+      "title": "Add winter travel outfit scenario 084",
+      "source_branch": "feature/offline-outfit-scenario-084",
+      "target_branch": "main",
+      "commit": "1065f3868dd0a25f328421221c4c266c3bd4691c",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_084.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 85,
+      "title": "Add winter sport outfit scenario 085",
+      "source_branch": "feature/offline-outfit-scenario-085",
+      "target_branch": "main",
+      "commit": "14aca0f181c9419c982302ae2827764a0186de18",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_085.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 86,
+      "title": "Add winter casual outfit scenario 086",
+      "source_branch": "feature/offline-outfit-scenario-086",
+      "target_branch": "main",
+      "commit": "314a547aefa3ffb628cb72b3652ae741ecbb57ef",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_086.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 87,
+      "title": "Add winter work outfit scenario 087",
+      "source_branch": "feature/offline-outfit-scenario-087",
+      "target_branch": "main",
+      "commit": "2908a38a1f6fb6937aaddc6a4c3ca274324a5507",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_087.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 88,
+      "title": "Add winter formal outfit scenario 088",
+      "source_branch": "feature/offline-outfit-scenario-088",
+      "target_branch": "main",
+      "commit": "af454f5695429c4d97966041aa2989c28fdb6658",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_088.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 89,
+      "title": "Add winter travel outfit scenario 089",
+      "source_branch": "feature/offline-outfit-scenario-089",
+      "target_branch": "main",
+      "commit": "bbbd7f1a7d8c4a978037fb760dbd809647e9c12c",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_089.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 90,
+      "title": "Add winter sport outfit scenario 090",
+      "source_branch": "feature/offline-outfit-scenario-090",
+      "target_branch": "main",
+      "commit": "ba5c6d0acc6fcdeb600719e684c34539156b6efc",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_090.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 91,
+      "title": "Add winter casual outfit scenario 091",
+      "source_branch": "feature/offline-outfit-scenario-091",
+      "target_branch": "main",
+      "commit": "08399259a815c0312a5cda2e44d9c37f91aa9000",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_091.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 92,
+      "title": "Add winter work outfit scenario 092",
+      "source_branch": "feature/offline-outfit-scenario-092",
+      "target_branch": "main",
+      "commit": "ca08fa70b6da469cc7ad0c903fd1b32a3fdf6271",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_092.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 93,
+      "title": "Add winter formal outfit scenario 093",
+      "source_branch": "feature/offline-outfit-scenario-093",
+      "target_branch": "main",
+      "commit": "6d4e1d109344bf45f9a50920565be0c0251bf7ad",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_093.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 94,
+      "title": "Add winter travel outfit scenario 094",
+      "source_branch": "feature/offline-outfit-scenario-094",
+      "target_branch": "main",
+      "commit": "661807e243933c01f8165c7e05d7b411bb51039d",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_094.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 95,
+      "title": "Add winter sport outfit scenario 095",
+      "source_branch": "feature/offline-outfit-scenario-095",
+      "target_branch": "main",
+      "commit": "8bb1485ce3e782ba4b03841b638567d978b258ea",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_095.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 96,
+      "title": "Add winter casual outfit scenario 096",
+      "source_branch": "feature/offline-outfit-scenario-096",
+      "target_branch": "main",
+      "commit": "385c5551b952ab49d4783af84f9731bfec95fc2e",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_096.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 97,
+      "title": "Add winter work outfit scenario 097",
+      "source_branch": "feature/offline-outfit-scenario-097",
+      "target_branch": "main",
+      "commit": "6dd0d3a8cf049c2d10e893918862aee10ced644d",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_097.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 98,
+      "title": "Add winter formal outfit scenario 098",
+      "source_branch": "feature/offline-outfit-scenario-098",
+      "target_branch": "main",
+      "commit": "5a3c5cae7727653f095470f09f309492b65dabda",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_098.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 99,
+      "title": "Add winter travel outfit scenario 099",
+      "source_branch": "feature/offline-outfit-scenario-099",
+      "target_branch": "main",
+      "commit": "3f7773f6555ddd79dfc387076cc64c2b67541d7c",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_099.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    },
+    {
+      "local_pr_number": 100,
+      "title": "Add winter sport outfit scenario 100",
+      "source_branch": "feature/offline-outfit-scenario-100",
+      "target_branch": "main",
+      "commit": "61b8d8ecbe42626c0ad45e755268bb51a8945d3e",
+      "status": "locally merged; not a hosted pull request",
+      "change": "vogue_engine/offline_style_catalog/scenario_100.json",
+      "validation": "python -m vogue_engine.offline_style_catalog.validate_catalog"
+    }
+  ]
+}
