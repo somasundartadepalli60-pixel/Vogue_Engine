@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-073",
+  "season": "autumn",
+  "occasion": "formal",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "olive"
+    },
+    {
+      "category": "trousers",
+      "color": "teal"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 91,
+  "rationale": "Autumn formal ensemble pairing olive with teal for an offline recommendation example."
+}
