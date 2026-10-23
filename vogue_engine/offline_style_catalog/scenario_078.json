@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-078",
+  "season": "winter",
+  "occasion": "formal",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "tan"
+    },
+    {
+      "category": "trousers",
+      "color": "cream"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 70,
+  "rationale": "Winter formal ensemble pairing tan with cream for an offline recommendation example."
+}
