@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-041",
+  "season": "summer",
+  "occasion": "casual",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "navy"
+    },
+    {
+      "category": "trousers",
+      "color": "white"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 85,
+  "rationale": "Summer casual ensemble pairing navy with white for an offline recommendation example."
+}
