@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-091",
+  "season": "winter",
+  "occasion": "casual",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "navy"
+    },
+    {
+      "category": "trousers",
+      "color": "white"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 83,
+  "rationale": "Winter casual ensemble pairing navy with white for an offline recommendation example."
+}
