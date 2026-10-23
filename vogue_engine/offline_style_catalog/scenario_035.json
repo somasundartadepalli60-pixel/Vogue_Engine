@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-035",
+  "season": "summer",
+  "occasion": "sport",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "white"
+    },
+    {
+      "category": "trousers",
+      "color": "black"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 79,
+  "rationale": "Summer sport ensemble pairing white with black for an offline recommendation example."
+}
