@@ -1,0 +1,6 @@
+[
+  {"name": "White tee", "category": "top", "color": "white", "seasons": ["summer"], "occasions": ["casual"]},
+  {"name": "Navy chinos", "category": "bottom", "color": "navy", "occasions": ["casual", "office"]},
+  {"name": "Black sneakers", "category": "shoes", "color": "black", "occasions": ["casual"]},
+  {"name": "Blue shirt", "category": "top", "color": "blue", "occasions": ["office"]}
+]
