@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vogue Engine | Fit Studio</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,Arial,sans-serif;background:#0e1523;color:#e7edf8}*{box-sizing:border-box}
+body{max-width:1160px;margin:auto;padding:28px 18px}h1{margin-bottom:4px}h2{font-size:1.2rem}
+.muted{color:#a9b8ce}.layout{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+section{background:#172237;border:1px solid #32445f;border-radius:14px;padding:18px;margin:16px 0}
+label{display:block;margin:10px 0 5px}input,select,button{font:inherit;border-radius:7px;padding:9px;color:inherit}
+input,select{background:#0d182a;border:1px solid #4c607a;max-width:100%;width:100%}
+button{background:#3674b8;border:0;cursor:pointer;margin:8px 8px 8px 0}button:hover{background:#4b89d1}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:10px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#0d182a;padding:12px;border-radius:8px}
+svg{width:100%;height:240px;background:#0d182a;border-radius:8px}
+#message{min-height:24px}table{width:100%;border-collapse:collapse}th,td{padding:7px;text-align:left;border-bottom:1px solid #3a4b63}
+</style></head><body>
+<h1>Fit Studio</h1><p class="muted">Offline garment measurements, size profiles, fit comparisons and measurement history. Values are in centimeters.</p>
+<p id="message" role="status" aria-live="polite"></p>
+<div class="layout"><section><h2>Size profiles</h2><label for="profileName">Profile name</label><input id="profileName" maxlength="80" placeholder="Everyday">
+<label for="sizeLabel">Size label</label><input id="sizeLabel" maxlength="40" placeholder="M">
+<div id="profileDimensions" class="grid"></div><button id="saveProfile">Save profile</button>
+<label for="profileSelect">Compare using profile</label><select id="profileSelect"></select><button id="deleteProfile">Delete selected profile</button>
+</section><section><h2>Garment measurements</h2><label for="garmentId">Garment ID</label><input id="garmentId" type="number" min="1" step="1" placeholder="From your wardrobe">
+<label for="measuredOn">Measurement date</label><input id="measuredOn" type="date">
+<label for="garmentSize">Garment size</label><input id="garmentSize" maxlength="40" placeholder="L">
+<div id="garmentDimensions" class="grid"></div><label for="note">Note</label><input id="note" maxlength="500">
+<button id="saveMeasurement">Save measurement</button><button id="loadHistory">Load history</button></section></div>
+<section><h2>Fit comparison</h2><label for="ease">Requested ease (cm)</label><input id="ease" type="number" min="-20" max="30" step="0.5" value="2">
+<button id="compare">Compare measurements</button><pre id="fitResult">Select a profile and garment, then compare.</pre>
+<p class="muted">These are numerical comparisons, not guarantees of comfort or fit.</p></section>
+<section><h2>Measurement history and trends</h2><label for="dimensionSelect">Chart dimension</label><select id="dimensionSelect"></select>
+<svg id="chart" viewBox="0 0 680 240" role="img" aria-label="Measurement history chart"></svg>
+<div id="trendSummary" class="muted"></div><div style="overflow:auto"><table><thead><tr><th>Date</th><th>Size</th><th>Measurements</th><th>Action</th></tr></thead><tbody id="historyRows"></tbody></table></div></section>
+<script>
+'use strict';
+const dimensions=['chest','waist','hip','shoulder','sleeve','inseam','length'];
+const $=id=>document.getElementById(id);let trends=null;
+const escapeText=value=>String(value??'');
+function message(value){$('message').textContent=value}
+function fields(container,prefix){for(const dim of dimensions){const wrapper=document.createElement('div');const label=document.createElement('label');label.textContent=dim;label.htmlFor=prefix+dim;const input=document.createElement('input');input.id=prefix+dim;input.type='number';input.min='0.01';input.max='400';input.step='0.01';wrapper.append(label,input);$(container).append(wrapper)}}
+fields('profileDimensions','p_');fields('garmentDimensions','g_');
+$('measuredOn').value=new Date().toLocaleDateString('en-CA');
+for(const dim of dimensions){const option=document.createElement('option');option.value=dim;option.textContent=dim;$('dimensionSelect').append(option)}
+function values(prefix){const result={};for(const dim of dimensions){const raw=$(prefix+dim).value.trim();if(raw!==''){const number=Number(raw);if(!Number.isFinite(number)||number<=0||number>400)throw Error('Invalid '+dim+' measurement');result[dim]=number}}if(!Object.keys(result).length)throw Error('Enter at least one measurement');return result}
+async function request(path,options={}){const response=await fetch('/api/v1/wardrobe/measurements'+path,{...options,headers:{'Content-Type':'application/json',...(options.headers||{})}});const body=await response.json();if(!response.ok)throw Error(typeof body.detail==='string'?body.detail:JSON.stringify(body.detail));return body}
+async function act(fn){try{message('');await fn()}catch(error){message('Error: '+error.message)}}
+async function profiles(){const rows=await request('/profiles');const selected=$('profileSelect').value;$('profileSelect').replaceChildren();for(const row of rows){const option=document.createElement('option');option.value=row.id;option.textContent=row.name+' ('+row.size_label+')';$('profileSelect').append(option)}if(rows.some(row=>String(row.id)===selected))$('profileSelect').value=selected}
+$('saveProfile').onclick=()=>act(async()=>{await request('/profiles',{method:'PUT',body:JSON.stringify({name:$('profileName').value,size_label:$('sizeLabel').value,measurements:values('p_')})});await profiles();message('Profile saved')});
+$('deleteProfile').onclick=()=>act(async()=>{const id=$('profileSelect').value;if(!id)throw Error('Choose a profile');if(!confirm('Delete selected size profile?'))return;await request('/profiles/'+id,{method:'DELETE'});await profiles();message('Profile deleted')});
+function garment(){const id=Number($('garmentId').value);if(!Number.isSafeInteger(id)||id<=0)throw Error('Enter a valid garment ID');return id}
+$('saveMeasurement').onclick=()=>act(async()=>{await request('/garments/'+garment(),{method:'POST',body:JSON.stringify({measured_on:$('measuredOn').value,size_label:$('garmentSize').value,note:$('note').value,measurements:values('g_')})});await history();message('Measurement saved')});
+$('compare').onclick=()=>act(async()=>{const id=$('profileSelect').value;if(!id)throw Error('Choose a profile');const ease=Number($('ease').value);if(!Number.isFinite(ease)||ease< -20||ease>30)throw Error('Ease must be -20 to 30');const result=await request('/fit/'+garment()+'/'+id+'?ease_cm='+encodeURIComponent(ease));$('fitResult').textContent=result.status+'\n'+result.dimensions.map(x=>x.dimension+': garment '+x.garment_cm+' cm, profile '+x.profile_cm+' cm, difference '+x.difference_cm+' cm ('+(x.meets_ease?'meets ease':'below ease')+')').join('\n')+'\n\n'+result.disclaimer});
+function svg(tag,attributes){const element=document.createElementNS('http://www.w3.org/2000/svg',tag);for(const [key,value] of Object.entries(attributes))element.setAttribute(key,value);return element}
+function chart(){const canvas=$('chart');canvas.replaceChildren();const dim=$('dimensionSelect').value;const item=trends?.dimensions?.[dim];if(!item){$('trendSummary').textContent='No measurements for this dimension';return}const points=item.points;const values=points.map(p=>p.cm),min=Math.min(...values),max=Math.max(...values),spread=Math.max(max-min,1);const coords=points.map((p,i)=>[50+(points.length===1?290:i*580/(points.length-1)),195-(p.cm-min)/spread*145]);canvas.append(svg('line',{x1:45,y1:205,x2:645,y2:205,stroke:'#7c91af'}));if(coords.length>1)canvas.append(svg('polyline',{points:coords.map(p=>p.join(',')).join(' '),fill:'none',stroke:'#70c5ff','stroke-width':3}));for(let i=0;i<coords.length;i++){const [x,y]=coords[i];canvas.append(svg('circle',{cx:x,cy:y,r:5,fill:'#ffcd72'}));const label=svg('text',{x,y:y-11,fill:'#e7edf8','font-size':12,'text-anchor':'middle'});label.textContent=points[i].cm+' cm';canvas.append(label)}$('trendSummary').textContent=points.length+' measurements · First: '+item.first_cm+' cm · Latest: '+item.latest_cm+' cm · Change: '+item.change_cm+' cm'}
+$('dimensionSelect').onchange=chart;
+async function history(){const id=garment();const [events,summary]=await Promise.all([request('/garments/'+id),request('/garments/'+id+'/trends')]);trends=summary;const rows=$('historyRows');rows.replaceChildren();for(const event of events){const tr=document.createElement('tr');for(const value of [event.measured_on,event.size_label,Object.entries(event.measurements).map(([k,v])=>k+': '+v).join(', ')]){const td=document.createElement('td');td.textContent=escapeText(value);tr.append(td)}const td=document.createElement('td'),button=document.createElement('button');button.textContent='Delete';button.onclick=()=>act(async()=>{if(!confirm('Delete this measurement event?'))return;await request('/events/'+event.id,{method:'DELETE'});await history();message('Measurement deleted')});td.append(button);tr.append(td);rows.append(tr)}chart()}
+$('loadHistory').onclick=()=>act(history);act(profiles);
+</script></body></html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vogue Engine | Lending Dashboard</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui;background:#101827;color:#f1f5f9}body{max-width:1200px;margin:auto;padding:2rem}h1{margin-bottom:.2rem}p{color:#bac8dc}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem}.card,section{background:#1b293e;border:1px solid #35445c;border-radius:12px;padding:1rem;margin:1rem 0}.number{font-size:2rem;font-weight:bold}button,input,select{font:inherit;border-radius:6px;padding:.5rem;background:#293d58;color:white;border:1px solid #657995}button{cursor:pointer}button:hover{background:#405b7b}table{width:100%;border-collapse:collapse}td,th{padding:.6rem;border-bottom:1px solid #40506a;text-align:left}th{color:#c9d8f1}.overdue{color:#ffb4b4}.error{color:#ffb4b4}form{display:flex;gap:.5rem;flex-wrap:wrap}label{display:flex;flex-direction:column;gap:.3rem}canvas{max-width:100%}@media(max-width:600px){body{padding:.7rem}table{font-size:.85rem}}
+</style></head><body>
+<h1>Garment Lending Dashboard</h1><p>Local lending records, due dates, and return reminders. Reminders appear when this page is open.</p>
+<div class="cards" id="metrics" aria-live="polite"></div>
+<section><h2>Create a loan</h2><form id="newLoan">
+<label>Garment ID<input name="garment_id" type="number" min="1" required></label>
+<label>Direction<select name="direction"><option value="lent">Lent</option><option value="borrowed">Borrowed</option></select></label>
+<label>Contact<input name="contact" maxlength="150" required></label>
+<label>Start<input name="start_date" type="date" required></label>
+<label>Due<input name="due_date" type="date" required></label>
+<button type="submit">Save loan</button></form></section>
+<section><h2>Due date calendar</h2><label>Look ahead (days)<input id="days" type="number" min="1" max="366" value="30"></label><div id="calendar"></div></section>
+<section><h2>Active loans</h2><table><thead><tr><th>Garment</th><th>Contact</th><th>Direction</th><th>Due</th><th>Action</th></tr></thead><tbody id="loans"></tbody></table></section>
+<section><h2>Monthly lending activity</h2><div id="monthly"></div></section>
+<p id="message" role="status"></p>
+<script>
+'use strict';
+const api='/api/v1/wardrobe/lending';
+const el=id=>document.getElementById(id);
+const node=(tag,text,cls)=>{const e=document.createElement(tag);e.textContent=String(text);if(cls)e.className=cls;return e;};
+async function request(path,options){const r=await fetch(api+path,options);const body=await r.json();if(!r.ok)throw Error(typeof body.detail==='string'?body.detail:'Request failed');return body;}
+function renderTable(items){const target=el('loans');target.replaceChildren();for(const loan of items){const tr=node('tr','');for(const value of [loan.garment_id,loan.contact,loan.direction,loan.due_date])tr.append(node('td',value));const td=node('td','');const btn=node('button','Mark returned');btn.addEventListener('click',async()=>{try{await request('/loans/'+loan.id+'/return',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});await refresh();}catch(err){el('message').textContent=err.message;}});td.append(btn);tr.append(td);target.append(tr);}if(!items.length)target.append(node('tr','No active loans'));}
+async function refresh(){try{const days=Math.max(1,Math.min(366,Number(el('days').value)||30));const [data,loans]=await Promise.all([request('/insights?days='+days),request('/loans?active_only=true')]);el('metrics').replaceChildren();for(const [key,value] of Object.entries(data.totals)){const card=node('div','', 'card');card.append(node('div',key.replaceAll('_',' ')),node('div',value,'number'));el('metrics').append(card);}el('calendar').replaceChildren();for(const entry of data.calendar){const div=node('div',entry.date+' — '+entry.loans.map(x=>x.contact+' (garment '+x.garment_id+')').join(', '),entry.loans.some(x=>x.overdue)?'overdue':'');el('calendar').append(div);}if(!data.calendar.length)el('calendar').append(node('p','No due dates in this period.'));el('monthly').replaceChildren();for(const entry of data.monthly_activity)el('monthly').append(node('p',entry.month+': '+entry.loans+' loans'));renderTable(loans);el('message').textContent='Updated locally.';}catch(err){el('message').textContent=err.message;}}
+el('days').addEventListener('change',refresh);
+el('newLoan').addEventListener('submit',async event=>{event.preventDefault();const values=Object.fromEntries(new FormData(event.target));values.garment_id=Number(values.garment_id);try{await request('/loans',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(values)});event.target.reset();await refresh();}catch(err){el('message').textContent=err.message;}});
+refresh();
+</script></body></html>
