@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vogue-engine-core"
+version = "1.0.0"
+description = "VogueEngine Core - Open-Source Personal Style, Facial Analysis, and Wardrobe Engine"
+authors = [{ name = "VogueEngine Architectural Core Team" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0",
+    "mediapipe>=0.10.0",
+    "pillow>=10.0.0",
+    "pydantic>=2.5.0",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "httpx>=0.26.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "vogue_engine/tests"]
+pythonpath = ["."]
+addopts = "-v --strict-markers"

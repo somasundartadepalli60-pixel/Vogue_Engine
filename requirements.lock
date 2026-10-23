@@ -1,0 +1,13 @@
+# Direct dependencies pinned for repeatable top-level versions.
+# Transitive dependencies are resolved by pip; this is NOT a hash-locked full dependency graph.
+numpy==2.3.5
+opencv-python==4.13.0.92
+mediapipe==0.10.32
+pillow==12.3.0
+pydantic==2.13.5
+fastapi==0.128.2
+uvicorn==0.48.0
+python-multipart==0.0.20
+pytest==9.0.2
+pytest-asyncio==1.3.0
+httpx==0.28.1
