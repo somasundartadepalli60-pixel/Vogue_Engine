@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-071",
+  "season": "autumn",
+  "occasion": "casual",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "navy"
+    },
+    {
+      "category": "trousers",
+      "color": "white"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 89,
+  "rationale": "Autumn casual ensemble pairing navy with white for an offline recommendation example."
+}
