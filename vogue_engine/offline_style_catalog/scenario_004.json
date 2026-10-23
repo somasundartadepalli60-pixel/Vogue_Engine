@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-004",
+  "season": "spring",
+  "occasion": "travel",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "charcoal"
+    },
+    {
+      "category": "trousers",
+      "color": "tan"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 74,
+  "rationale": "Spring travel ensemble pairing charcoal with tan for an offline recommendation example."
+}
