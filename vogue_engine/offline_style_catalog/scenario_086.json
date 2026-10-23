@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-086",
+  "season": "winter",
+  "occasion": "casual",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "burgundy"
+    },
+    {
+      "category": "trousers",
+      "color": "sky"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 78,
+  "rationale": "Winter casual ensemble pairing burgundy with sky for an offline recommendation example."
+}
