@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-055",
+  "season": "autumn",
+  "occasion": "sport",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "white"
+    },
+    {
+      "category": "trousers",
+      "color": "black"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 73,
+  "rationale": "Autumn sport ensemble pairing white with black for an offline recommendation example."
+}
