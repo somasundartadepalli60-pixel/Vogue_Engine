@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-003",
+  "season": "spring",
+  "occasion": "formal",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "olive"
+    },
+    {
+      "category": "trousers",
+      "color": "teal"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 73,
+  "rationale": "Spring formal ensemble pairing olive with teal for an offline recommendation example."
+}
