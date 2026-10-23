@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-100",
+  "season": "winter",
+  "occasion": "sport",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "sky"
+    },
+    {
+      "category": "trousers",
+      "color": "charcoal"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 92,
+  "rationale": "Winter sport ensemble pairing sky with charcoal for an offline recommendation example."
+}
