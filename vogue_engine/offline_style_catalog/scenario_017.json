@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-017",
+  "season": "spring",
+  "occasion": "work",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "teal"
+    },
+    {
+      "category": "trousers",
+      "color": "navy"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 87,
+  "rationale": "Spring work ensemble pairing teal with navy for an offline recommendation example."
+}
