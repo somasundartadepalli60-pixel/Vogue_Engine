@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-094",
+  "season": "winter",
+  "occasion": "travel",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "charcoal"
+    },
+    {
+      "category": "trousers",
+      "color": "tan"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 86,
+  "rationale": "Winter travel ensemble pairing charcoal with tan for an offline recommendation example."
+}
