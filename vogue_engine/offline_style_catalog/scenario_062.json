@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-062",
+  "season": "autumn",
+  "occasion": "work",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "cream"
+    },
+    {
+      "category": "trousers",
+      "color": "burgundy"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 80,
+  "rationale": "Autumn work ensemble pairing cream with burgundy for an offline recommendation example."
+}
