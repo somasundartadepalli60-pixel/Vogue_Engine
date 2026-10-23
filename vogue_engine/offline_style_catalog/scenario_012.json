@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-012",
+  "season": "spring",
+  "occasion": "work",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "cream"
+    },
+    {
+      "category": "trousers",
+      "color": "burgundy"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 82,
+  "rationale": "Spring work ensemble pairing cream with burgundy for an offline recommendation example."
+}
