@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-099",
+  "season": "winter",
+  "occasion": "travel",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "black"
+    },
+    {
+      "category": "trousers",
+      "color": "olive"
+    },
+    {
+      "category": "shoes",
+      "color": "black"
+    }
+  ],
+  "score": 91,
+  "rationale": "Winter travel ensemble pairing black with olive for an offline recommendation example."
+}
