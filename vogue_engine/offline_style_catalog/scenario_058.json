@@ -1,0 +1,21 @@
+{
+  "id": "VE-OUTFIT-058",
+  "season": "autumn",
+  "occasion": "formal",
+  "outfit": [
+    {
+      "category": "shirt",
+      "color": "tan"
+    },
+    {
+      "category": "trousers",
+      "color": "cream"
+    },
+    {
+      "category": "shoes",
+      "color": "tan"
+    }
+  ],
+  "score": 76,
+  "rationale": "Autumn formal ensemble pairing tan with cream for an offline recommendation example."
+}
