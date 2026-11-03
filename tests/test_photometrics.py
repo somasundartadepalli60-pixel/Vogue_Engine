@@ -41,7 +41,7 @@ class TestPhotometrics:
         """Creates an image with very light skin (L*~90) and pitch-black hair (L*~5)."""
         img = np.zeros((400, 400, 3), dtype=np.uint8)
         img[:] = (240, 240, 240)  # Very light
-        img[0:60, :] = (0, 0, 0)      # Jet black hair
+        img[0:60, :] = (0, 0, 0)     # Jet black hair
 
         profile = PhotometricEngine.analyze_image(img, synthetic_canonical_mesh)
         assert profile.contrast_level == ContrastLevel.HIGH
