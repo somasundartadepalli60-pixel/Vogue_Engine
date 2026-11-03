@@ -19,7 +19,7 @@ class PlannerTests(unittest.TestCase):
 
     def test_bad_category(self):
         with self.assertRaises(ValueError):
-            Garment("Hat", "accessory", "red")
+            Garment("Hat", "accessory", "red"0
 
     def test_duplicate_category(self):
         with self.assertRaises(ValueError):
